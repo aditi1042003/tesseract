@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+<!--- for removing repetitive code--->
+{% block content %}
+
+
+      <div class="alert alert-success" role="alert">
+        Results are out!!
+      </div>
+      <section class="login py-5 bg-white">
+          <div class="container">
+              <div class="row g-0">
+                <div class="col-lg-5">
+                    <img src="https://i.pinimg.com/originals/da/c7/13/dac71367c46f3f6cb5fb3cefbe305917.gif" class="img-fluid" alt="" width="400" height="400">
+                  </div>
+                  <div class="col-lg-7">
+                    <h1>Here are the results!!</h1>
+                    <div>
+                      <h2 style="color:red">With this Air quality level</h2>
+                      <h2 style="color:red">Number of people getting cancer in thousand: {{int(posts)}}</h2>
+                    </div>
+                    <br>
+                    <br>
+                    <h1>cure-><a href="/cure">Click_here</a><h1>
+                      <form>
+                        <h4>Would you like to share:</h4>
+                        <div class="form-check">
+                            <p> </p>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Yes
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              No
+                            </label>
+                        </div>
+                        <p> </p>
+                          <button type="button" class="btn btn-success">Submit</button>
+                        <div class="form-row py-1 pt-5">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+{% endblock content%}

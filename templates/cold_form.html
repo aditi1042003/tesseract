@@ -1,0 +1,179 @@
+{% extends "layout.html" %}
+<!--- for removing repetitive code--->
+{% block content %}
+
+  <div class="alert alert-success" role="alert">
+    Complete your covid test now!
+  </div>
+  <section class="login py-5 bg-white">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-lg-7">
+              <img src="https://ccc-19.depok.go.id/assets/images/icon/btnnn.png" class="img-fluid" alt="" width="500" height="500">
+            </div>
+            <div class="col-lg-7 py-5">
+              <h1>COVID-19 SELF ASSESSMENT TEST</h1>
+                <form action='/result_cold' method='POST' class='form_1' >
+
+
+                  <p> </p>
+                  <p> </p>
+                  <h4>Q1. What type of cough do you have?</h4>
+                    <div class="form-check">
+                        <p> </p>
+                        <input class="form-check-input" type="radio" name="Q1" id="flexRadioDefault1" value="covid">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Dry
+                        </label>
+                    </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Q1" id="flexRadioDefault1" value='cold'>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Phlegm(wet cough)
+                        </label>
+                      </div>
+                      <p> </p>
+            
+                  <h4>Q2. Do you feel loss of smell and/or taste?</h4>
+                      <div class="form-check">
+                          <p> </p>
+                          <input class="form-check-input" type="radio" name="Q2" id="flexRadioDefault1" value="covid">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Yes
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Q2" id="flexRadioDefault1" value="cold">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            No
+                          </label>
+                      </div>
+                      <p> </p>
+                
+                  <p> </p>
+                  <h4>Q3. What is the duration of the symptom?</h4>
+                      <div class="form-check">
+                          <p> </p>
+                          <input class="form-check-input" type="radio" name="Q3" value='cold' id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            2-4 days
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Q3"  value='covid'id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            More than a week
+                          </label>
+                      </div>
+                      <p> </p>
+                
+                  <p> </p>
+                  <h4>Q4. Have you been in contact with any person suffering from covid?</h4>
+                      <div class="form-check">
+                          <p> </p>
+                          <input class="form-check-input" type="radio" name="Q4" value="covid" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Yes
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Q4" value="cold" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            No
+                          </label>
+                      </div>
+                      <p> </p>
+                
+                  <p> </p>
+                  <h4>Q5. Do you have any kind of allergies?</h4>
+                      <div class="form-check">
+                          <p> </p>
+                          <input class="form-check-input" type="radio" name="Q5" value="cold" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Yes
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Q5" value="covid" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            No
+                          </label>
+                      </div>
+                      <p> </p>
+                
+                  <p> </p>
+                  <h4>Q6. Do you feel loss of apetite?</h4>
+                      <div class="form-check">
+                          <p> </p>
+                          <input class="form-check-input" type="radio" name="Q6" value="covid" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Yes
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Q6" value="cold" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            No
+                          </label>
+                      </div>
+                      <p> </p>
+                
+                  <p> </p>
+                  <h4>Q7. Do you feel shortness of breath?</h4>
+                      <div class="form-check">
+                          <p> </p>
+                          <input class="form-check-input" type="radio" name="Q7" value="covid"id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Yes
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Q7" value="cold" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            No
+                          </label>
+                      </div>
+                      <p> </p>
+                
+                  <p> </p>
+                  <h4>Q8. Do you withness any sort of muscle ache?</h4>
+                      <div class="form-check">
+                          <p> </p>
+                          <input class="form-check-input" type="radio" name="Q8" value="covid" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Yes
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Q8" value="cold" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            No
+                          </label>
+                      </div>
+                      <p> </p>
+               
+                  <p> </p>
+                  <h4>Q9. Do you feel any kind of chest pain?</h4>
+                      <div class="form-check">
+                          <p> </p>
+                          <input class="form-check-input" type="radio" name="Q9" value="covid" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Yes
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="Q9" value="cold" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            No
+                          </label>
+                      </div>
+                      <p> </p>
+                      <input type="Submit" class="btn btn-success" >
+      
+                </form>
+            </div>
+        </div>
+    </div>
+  </section>
+
+{% endblock content%}

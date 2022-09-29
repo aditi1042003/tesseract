@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+<!--- for removing repetitive code--->
+{% block content %}
+{% for post in range(5) %}
+<h1>contact us</h1>
+{% endfor %}
+<h1>result</h1>
+<h1>{{posts}}</h1>
+{% endblock content%}
