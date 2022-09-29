@@ -1,0 +1,43 @@
+{% extends "about.html" %}
+<!--- for removing repetitive code--->
+{% block content %}
+
+    <div class="alert alert-success" role="alert">
+      Please share your journey through lung cancer: <strong>Help others:</strong>
+    </div>
+    <section class="login py-5 bg-white">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-7">
+                    <!--<img src="" class="img-fluid" alt="">-->
+                </div>
+                <div class="col-lg-7 py-5">
+                    <h1>Thankyou! for your co-operation</h1>
+                    <form action='/contact'>
+                        <fieldset>
+              
+              <legend>enter your details here</legend>
+              <label for="wasteAmount">At which stage your cancer detected:</label>
+              <input id="wasteAmount" type="text" name="A1">
+              <label for="wasteAmount">Which symptoms you faced:</label>
+              <input id="wasteAmount" type="text" name="A2">
+              <label for="wasteAmount">Technology used for detection:</label>
+              <input id="wasteAmount" type="text" name="A3">
+              <label for="wasteAmount">Currently going through with treatment</label>
+              <input id="wasteAmount" type="text" name="A4">
+              <label for="wasteAmount">Is it curing or worsening</label>
+              <input id="wasteAmount" type="text" name="A5">
+              <label for="wasteAmount">Cause for lung cancer</label>
+              <input id="wasteAmount" type="text" name="A5">
+              </fieldset>
+                          
+                          <input type="Submit" class="btn btn-success">
+                        <div class="form-row py-1 pt-5">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+{% endblock content%}

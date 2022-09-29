@@ -40,6 +40,10 @@ def about():
 def contact():
     return render_template('contact.html',title='Contact')
 
+@app.route("/share")
+def share():
+    return render_template('share_form.html',title='Share')
+
 
 @app.route("/results",methods=['POST','GET'])
 def results():
