@@ -1,0 +1,2 @@
+# tesseract
+ lung disease detection
