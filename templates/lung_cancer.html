@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-+4j30LffJ4tgIMrq9CwHvn0NjEvmuDCOfk6Rpg2xg7zgOxWWtLtozDEEVvBPgHqE" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="lung_cancer.css">
+    <title>Lung cancer</title>
+  </head>
+  <body>
+      <div class="row">
+        <div class="col-md-12">
+          <form action="/results" method="post">
+            <h1>Predict Lung Cancer</h1>
+            
+            <fieldset>
+              
+              <legend>Please let us know the quantity of these pollutants in the air:</legend>
+              <label for="wasteAmount">Amount Of PM2.5:</label>
+              <input id="wasteAmount" type="number" name="A1" step=".01">
+              <label for="wasteAmount">Amount Of PM10:</label>
+              <input id="wasteAmount" type="number" name="A2" step=".01">
+              <label for="wasteAmount">Amount Of SO2:</label>
+              <input id="wasteAmount" type="number" name="A3" step=".000001">
+              <label for="wasteAmount">Amount Of NO2:</label>
+              <input id="wasteAmount" type="number" name="A4" step=".000001">
+              <label for="wasteAmount">Amount Of O3:</label>
+              <input id="wasteAmount" type="number" name="A5" step=".01">
+              <label for="wasteAmount">Amount Of CO:</label>
+              <input id="wasteAmount" type="number" name="A6" step=".000001">
+              <label for="wasteAmount">Amount Of CN:</label>
+              <input id="wasteAmount" type="number" name="A7" step=".00001">
+              <label for="wasteAmount">Amount Of Diesel</label>
+              <input id="wasteAmount" type="number" name="A8" step=".000001">
+              <label for="wasteAmount">Amount Of Air_EQI</label>
+              <input id="wasteAmount" type="number" name="A9" step=".000001">
+             </fieldset>
+             <button type="button1" class="btn btn-success">Submit</button>
+            
+           </form>
+            </div>
+          </div>
+          
+        
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+      -->
+    </body>
+  </html>
